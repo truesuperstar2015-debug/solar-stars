@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-gold: #F5A623;
+    --brand-navy: #1A2B4A;
+    --brand-green: #2ECC71;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-gold hover:bg-brand-gold/90 text-white font-semibold 
+           px-6 py-3 rounded-lg transition-all duration-200 
+           shadow-md hover:shadow-lg active:scale-[0.98]
+           min-h-[44px] min-w-[44px];
+  }
+
+  .btn-secondary {
+    @apply bg-brand-navy hover:bg-brand-navy-light text-white font-semibold 
+           px-6 py-3 rounded-lg transition-all duration-200
+           min-h-[44px] min-w-[44px];
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 lg:px-16 xl:px-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
