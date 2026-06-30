@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Solar Stars",
+    "slug": "solar-stars",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": { "resizeMode": "contain", "backgroundColor": "#1A2B4A" },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "net.solarstars.app" },
+    "android": { "package": "net.solarstars.app", "adaptiveIcon": { "backgroundColor": "#1A2B4A" } },
+    "plugins": ["expo-router", "expo-notifications", "expo-secure-store", "expo-local-authentication"],
+    "scheme": "solarstars"
+  }
+}
